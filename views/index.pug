@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Custom Object Table
+  body
+    h1 Custom Object Table
+    a(href="/update-object") Add/Update this table
+    table(border="1")
+      tr
+        th Player Name
+        th Jersey Number
+        th Batting Style
+      each game in games
+        tr
+          td= game.properties.player_name
+          td= game.properties.jersey_number
+          td= game.properties.batting_style

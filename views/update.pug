@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Add Player
+  body
+    h1 Add New Player
+    form(action="/update-object" method="POST")
+      label(for="player_name") Player Name:
+      input(type="text" name="player_name" required)
+      br
+      label(for="jersey_number") Jersey Number:
+      input(type="text" name="jersey_number" required)
+      br
+      label(for="batting_style") Batting Style:
+      input(type="text" name="batting_style" required)
+      br
+      button(type="submit") Create Player
+    br
+    a(href="/") Back to Home
